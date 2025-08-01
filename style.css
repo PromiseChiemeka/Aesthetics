@@ -20,9 +20,7 @@ a {
   justify-content: space-between;
   align-items: center;
   background-color: #ffe6ef;
-  padding: 0 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 200px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -198,6 +196,10 @@ font-size: 16px;
     display: flex;
     justify-content: center;
     color: #2b2626;
+}
+.cards .h1 p {
+    text-align: center;
+    padding: 0 200px;
 }
 .card h3 {
   color: #e75480;
