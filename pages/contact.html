@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Mea's Aesthetics</title>
+  <link rel="stylesheet" href="../css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="container">
+    <a href="#" class="logo">Mea</a>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Nav links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- WhatsApp Form -->
+  <div class="message-center">
+    <div class="whatsapp-form">
+      <h2>Send us a message</h2>
+      <input type="text" id="name" placeholder="Your name" required />
+      <textarea id="message" placeholder="Your message" required></textarea>
+      <button onclick="sendToWhatsApp()">Send on WhatsApp</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h3>Contact</h3>
+      <p><a href="mailto:meaas.aesthetic@gmail.com">meaas.aesthetic@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <p><a href="https://instagram.com/meas_aesthtetic">@meas_aesthtetic</a></p>
+      <p><a href="https://tiktok.com/@meas_aesthtetics">@meas_aesthtetics</a></p>
+      <p><a href="https://facebook.com/MeasAesthetics">Facebook</a></p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Services</a></p>
+      <p><a href="#">Contact</a></p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mea's Aesthetics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    function sendToWhatsApp() {
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+      const phone = "2347065303071"; // Removed "+" for WhatsApp link format
+      const text = `Hello, my name is ${name}. ${message}`;
+      const encodedText = encodeURIComponent(text);
+      const url = `https://wa.me/${phone}?text=${encodedText}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>

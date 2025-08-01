@@ -1,0 +1,149 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe6ef;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #e75480;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #3a2d2d;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #ff0000;
+  border: 5px solid white;
+  border-radius: 32px;
+  padding: 10px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* WhatsApp Form */
+.message-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0e4d3;
+  padding: 20px;
+}
+
+.whatsapp-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  width: 50%;
+}
+
+input,
+textarea {
+  width: 600px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dcc5b2;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.message-center button {
+  background: #d9a299;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffe6ef;
+  color: #3a2d2d;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer h3 {
+  color: #e75480;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #3a2d2d;
+}
+
+.footer-bottom {
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #ffe6ef;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .whatsapp-form {
+    width: 90%;
+  }
+  input,
+  textarea {
+    width: 200px;
+}
+}

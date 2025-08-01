@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Mea's Aesthetics</title>
+  <link rel="stylesheet" href="../css/about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Mea</a>
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/services.html">Services</a></li>
+        <li><a href="../pages/about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-text">
+      <h1>About Mea’s Aesthetics</h1>
+      <p>At Mea’s Aesthetics, beauty is more than a look — it’s an experience. We believe in elegant lash artistry that enhances your natural beauty while maintaining the health of your lashes.</p>
+      <p>Our certified lash technicians use only premium products in a sanitized studio environment. From personalized lash styling to expert aftercare guidance, we make sure your glow lasts beyond the appointment.</p>
+    </div>
+    <div class="about-img">
+      <img src="../images/model.jpg.jpeg" alt="Lash model">
+    </div>
+  </section>
+<section class="core-values container">
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <h4>Clean & Safe</h4>
+      <p>We use only hypoallergenic and cruelty-free products in a sanitized studio environment.</p>
+    </div>
+    <div class="value-card">
+      <h4>Personalized Styles</h4>
+      <p>Whether subtle or bold, we tailor your lash look to match your unique personality.</p>
+    </div>
+    <div class="value-card">
+      <h4>Aftercare Support</h4>
+      <p>Our job doesn't end after your appointment. We equip you with tools and tips for long-lasting beauty.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h3>Contact</h3>
+      <p><a href="mailto:meas.aesthetic@gmail.com">meas.aesthetic@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <p><a href="https://instagram.com/meas_aesthtetic">@meas_aesthtetic</a></p>
+      <p><a href="https://tiktok.com/@meas_aesthtetics">@meas_aesthtetics</a></p>
+      <p><a href="https://facebook.com/MeasAesthetics">Facebook</a></p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="../pages/about.html">About</a></p>
+      <p><a href="../pages/services.html">Services</a></p>
+      <p><a href="../pages/contact.html">Contact</a></p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mea's Aesthetics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script for mobile navbar -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

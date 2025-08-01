@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mea's Aesthetics</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+<div class="container">
+  <a href="#" class="logo">Mea</a>
+
+  <!-- Hamburger icon -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+  <!-- Nav links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/services.html">Services</a></li>
+    <li><a href="pages/about.html">About</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+  </ul>
+</div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Mea's Aesthetics</h1>
+      <p>
+        Custom-fitted, lightweight, and made to last. We don’t just do lashes — we craft experiences. <br>
+        Step into elegance with every blink. <strong>Soft. Stunning. Unapologetically you.</strong>
+      </p>
+      <div class="buttons">
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        At Mea’s Aesthetics, we believe lashes are more than beauty — they’re confidence in every blink.
+        Located just in front of the AP filling station, Uniport, our lash studio is your destination for flawless, elegant, and long-lasting lash extensions.
+      </p>
+    </div>
+    <div class="about-img">
+      <img src="images/lash1 (2).webp" alt="About Mea's Aesthetics">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="cards">
+    <div class="h1"><h1> Some Services</h1></div>
+    <div class="card">
+      <img src="images/lash3 (2).jpg" alt="Lash Treatment">
+      <h3>Best Treatment</h3>
+      <p>Top-tier lash glue, no irritation, and long-lasting hold (up to 6 weeks).</p>
+    </div>
+    <div class="card">
+      <img src="images/extension.jpg.jpg" alt="Lash Extensions">
+      <h3>Luxury Extensions</h3>
+      <p>Elevate your look with custom lash sets tailored to your style and eye shape.</p>
+    </div>
+    <div class="card">
+      <img src="images/gadget.jpg.jpg" alt="Look Beautiful">
+      <h3>Look Beautiful</h3>
+      <p>Our lashes amplify your natural beauty and give you a confidence boost.</p>
+    </div>
+  </section>
+<!-- Beauty Care Section -->
+<section class="beauty-care">
+  <div class="beauty-text">
+    <h1>Beauty Care</h1>
+    <p>At Mea’s Aesthetics, beauty goes beyond the lash table — it’s about preserving the health of your natural lashes. We emphasize proper application, gentle handling, and clean products for stunning results that last.</p>
+    <p class="tips">✨ Aftercare Tips:</p>
+    <ul>
+      <li>Avoid water, steam, and oil-based products for the first 24 hours.</li>
+      <li>Brush your lashes daily to keep them neat.</li>
+      <li>Don’t rub your eyes or sleep on your face.</li>
+      <li>Schedule infills every 2–3 weeks for best retention.</li>
+    </ul>
+  </div>
+
+  <div class="beauty-gallery">
+    <img src="images/lash3 (4).jpg" alt="Instagram Post 2">
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h3>Contact</h3>
+      <p><a href="mailto:meaas.aesthetic@gmail.com">meaas.aesthetic@gmail.com</a></p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <p><a href="https://instagram.com/meas_aesthtetic">@meas_aesthtetic</a></p>
+      <p><a href="https://tiktok.com/@meas_aesthtetics">@meas_aesthtetics</a></p>
+      <p><a href="https://facebook.com/MeasAesthetics">Facebook</a></p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Services</a></p>
+      <p><a href="#">Contact</a></p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mea's Aesthetics. All rights reserved.</p>
+    </div>
+  </footer>
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+</script>
+</body>
+</html>
