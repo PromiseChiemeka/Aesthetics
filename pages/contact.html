@@ -9,71 +9,87 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <div class="container">
-    <a href="#" class="logo">Mea</a>
+<!-- Navigation -->
+<div class="container">
+  <a href="#" class="logo">Mea</a>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../pages/services.html">Services</a></li>
+    <li><a href="../pages/about.html">About</a></li>
+    <li><a href="../pages/contact.html">Contact</a></li>
+  </ul>
+</div>
 
-    <!-- Hamburger icon -->
-    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>We'd love to hear from you. Whether you're booking an appointment or have a question about our services, we're here to help.</p>
+    
+    <div class="info-block">
+      <h4>Email:</h4>
+      <p><a href="mailto:meas.aesthetic@gmail.com">meaas.aesthetic@gmail.com</a></p>
+    </div>
 
-    <!-- Nav links -->
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pages/services.html">Services</a></li>
-      <li><a href="pages/about.html">About</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
-    </ul>
-  </div>
+    <div class="info-block">
+      <h4>Phone / WhatsApp:</h4>
+      <p><a href="https://wa.me/2347065303071" target="_blank">+234 706 530 3071</a></p>
+    </div>
 
-  <!-- WhatsApp Form -->
-  <div class="message-center">
-    <div class="whatsapp-form">
-      <h2>Send us a message</h2>
-      <input type="text" id="name" placeholder="Your name" required />
-      <textarea id="message" placeholder="Your message" required></textarea>
-      <button onclick="sendToWhatsApp()">Send on WhatsApp</button>
+    <div class="info-block">
+      <h4>Hours:</h4>
+      <p>Mon – Sat: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div>
-      <h3>Contact</h3>
-      <p><a href="mailto:meaas.aesthetic@gmail.com">meaas.aesthetic@gmail.com</a></p>
-    </div>
-    <div>
-      <h3>Follow Us</h3>
-      <p><a href="https://instagram.com/meas_aesthtetic">@meas_aesthtetic</a></p>
-      <p><a href="https://tiktok.com/@meas_aesthtetics">@meas_aesthtetics</a></p>
-      <p><a href="https://facebook.com/MeasAesthetics">Facebook</a></p>
-    </div>
-    <div>
-      <h3>Quick Links</h3>
-      <p><a href="#">About</a></p>
-      <p><a href="#">Services</a></p>
-      <p><a href="#">Contact</a></p>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Mea's Aesthetics. All rights reserved.</p>
-    </div>
-  </footer>
+  <div class="contact-form">
+    <h2>Send us a message</h2>
+    <input type="text" id="name" placeholder="Full Name" required />
+    <textarea id="message" placeholder="Type your message here..." required></textarea>
+    <button onclick="sendToWhatsApp()">Send on WhatsApp</button>
+  </div>
+</section>
 
-  <!-- Scripts -->
-  <script>
-    function toggleMenu() {
-      document.getElementById('navLinks').classList.toggle('active');
-    }
+<!-- Footer -->
+<footer class="footer">
+  <div>
+    <h3>Contact</h3>
+    <p><a href="mailto:meas.aesthetic@gmail.com">meas.aesthetic@gmail.com</a></p>
+  </div>
+  <div>
+    <h3>Follow Us</h3>
+    <p><a href="https://www.instagram.com/meas_aesthetic/reels/">Instragram: @meas_aesthtetic</a></p>
+    <p><a href="https://www.tiktok.com/@meas_aesthetics">TikTok: @meas_aesthtetics</a></p>
+    <p><a href="https://web.facebook.com/mea.s.aesthetic.2025">Facebook: @Mea's Aesthetic</a></p>
+  </div>
+  <div>
+    <h3>Quick Links</h3>
+    <p><a href="../pages/about.html">About</a></p>
+      <p><a href="../pages/services.html">Services</a></p>
+      <p><a href="../pages/contact.html">Contact</a></p>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Mea's Aesthetics. All rights reserved.</p>
+  </div>
+</footer>
 
-    function sendToWhatsApp() {
-      const name = document.getElementById("name").value;
-      const message = document.getElementById("message").value;
-      const phone = "2347065303071"; // Removed "+" for WhatsApp link format
-      const text = `Hello, my name is ${name}. ${message}`;
-      const encodedText = encodeURIComponent(text);
-      const url = `https://wa.me/${phone}?text=${encodedText}`;
-      window.open(url, "_blank");
-    }
-  </script>
+<!-- Scripts -->
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    const phone = "2347065303071";
+    const text = `Hello, my name is ${name}. ${message}`;
+    const encodedText = encodeURIComponent(text);
+    const url = `https://wa.me/${phone}?text=${encodedText}`;
+    window.open(url, "_blank");
+  }
+</script>
 
 </body>
 </html>
