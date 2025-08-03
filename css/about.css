@@ -180,6 +180,9 @@ a {
   .about {
     padding: 10px;
   }
+  .about-img {
+    display: contents;
+  }
   .about-img img{
     width: 100%;
   }
