@@ -94,6 +94,7 @@ a {
 }
 
 .about-img {
+  display: flex;
   flex: 1;
   min-width: 280px;
   max-width: 600px;
