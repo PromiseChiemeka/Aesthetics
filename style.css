@@ -333,8 +333,8 @@ font-size: 16px;
     max-width: 100%;
   }
   .footer {
-    display: block;
-    gap: 10px;
+    display: grid;
+    gap: 30px;
     padding: 50px 20px;
   }
   .beauty-gallery img {
