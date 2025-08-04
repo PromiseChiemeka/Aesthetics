@@ -6,6 +6,8 @@
   <title>Mea's Aesthetics</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -62,17 +64,17 @@
       <h1> Our Services</h1>
       <p> we offer a range of luxury lash services and hair revamping designed to enhance your natural beauty.</p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="5000">
       <img src="images/lash3 (2).jpg" alt="Lash Treatment">
       <h3>Best Treatment</h3>
       <p>Top-tier lash glue, no irritation, and long-lasting hold (up to 6 weeks).</p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="3000">
       <img src="images/extension.jpg.jpg" alt="Lash Extensions">
       <h3>Luxury Extensions</h3>
       <p>Elevate your look with custom lash sets tailored to your style and eye shape.</p>
     </div>
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="5000">
       <img src="images/hair.jpg.jpg" alt="Look Beautiful">
       <h3>Revamp Hair</h3>
       <p>Transform your tresses with our expert touch. From silk presses to luxurious treatments, we breathe life back into your hair—smooth, shiny, and stunning.</p>
@@ -121,10 +123,15 @@
       <p>&copy; 2025 Mea's Aesthetics. All rights reserved.</p>
     </div>
   </footer>
-<script>
-  function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('active');
-  }
-</script>
 </body>
+<!-- Script for mobile navbar -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
