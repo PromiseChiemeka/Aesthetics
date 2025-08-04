@@ -13,7 +13,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+.about a {
+  color: #e75480;
+  text-decoration: underline;
+}
 /* Container for navbar */
 .container {
   display: flex;
