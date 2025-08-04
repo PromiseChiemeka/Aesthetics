@@ -142,7 +142,7 @@ a {
 @media (max-width: 767px) {
   .container {
     padding: 0 10px;
-    height: 31px;
+    height: 51px;
     position: sticky;
   }
   .nav-links {

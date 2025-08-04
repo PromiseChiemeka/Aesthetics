@@ -276,6 +276,7 @@ font-size: 16px;
     }
   .container {
     padding: 0 20px;
+    height: 51px;
   }
   .nav-links {
     position: absolute;
