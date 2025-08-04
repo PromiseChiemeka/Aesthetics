@@ -6,6 +6,8 @@
   <title>Our Services - Mea's Aesthetics</title>
   <link rel="stylesheet" href="../css/services.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 <nav class="navbar">
@@ -30,7 +32,7 @@
   <!-- Services Content -->
    <div class="main"><h1>Our Services</h1></div>
   <section class="services-container">
-    <div class="service-box">
+    <div class="service-box" data-aos="fade-left">
       <h2>Lash Extension Sets</h2>
       <ul>
         <li><strong>Classic Set:</strong> Natural, clean look with one lash per lash.</li>
@@ -44,7 +46,7 @@
   </section>
 <section class="core-values container2">
   <h2 class="section-title">Hair Revamping</h2>
-  <div class="values-grid">
+  <div class="values-grid" data-aos="fade-right">
     <div class="value-card">
       <h4>Healthy Hair Focus</h4>
       <p>We prioritize restoring your natural hair’s strength, shine, and moisture with every treatment.</p>
@@ -82,11 +84,15 @@
       <p>&copy; 2025 Mea's Aesthetics. All rights reserved.</p>
     </div>
   </footer>
- <!-- Script for mobile navbar -->
+</body>
+<!-- Script for mobile navbar -->
   <script>
     function toggleMenu() {
       document.getElementById("navLinks").classList.toggle("active");
     }
   </script>
-</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
