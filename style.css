@@ -27,7 +27,7 @@ a {
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
   font-size: 24px;
   color: #e75480;
 }
@@ -45,9 +45,6 @@ a {
 }
 .nav-links li a:hover{
   color: #ff0000;
-  background-color: white;
-  border-radius: 32px;
-  border: 3px solid white;
 }
 /* Hamburger menu */
 .hamburger {
@@ -79,12 +76,12 @@ a {
   position: relative;
   z-index: 2;
   max-width: 800px;
-  padding: 50px;
+  padding: 50px 20px;
   /* height: 100vh; */
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
@@ -251,7 +248,7 @@ font-size: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
+  padding: 50px 200px;
   font-size: 16px;
   gap: 10px;
 }
@@ -278,11 +275,11 @@ font-size: 16px;
         margin: 0;
     }
   .container {
-    padding: 20px;
+    padding: 0 20px;
   }
   .nav-links {
     position: absolute;
-    top: 50px;
+    top: 35px;
     right: 0;
     background-color: #ffe6ef;
     width: 100%;
@@ -290,7 +287,7 @@ font-size: 16px;
     align-items: center;
     display: none;
     padding: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
   }
 
   .nav-links.active {
@@ -338,6 +335,7 @@ font-size: 16px;
   .footer {
     display: block;
     gap: 10px;
+    padding: 50px 20px;
   }
   .beauty-gallery img {
     width: 100%;
